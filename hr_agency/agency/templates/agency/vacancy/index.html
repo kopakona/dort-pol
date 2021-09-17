@@ -1,0 +1,131 @@
+{% extends "agency/base.html" %}
+
+{% load i18n %}
+{% load static %}
+
+  {% block style %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  {% endblock %}
+
+      {% block big_title %}
+      <!-- title -->
+      <div class="row">
+        <div class="col-lg-6 title-left">
+          <div class="rzetelna-firma">
+            <a class="btn btn-light btn-sm" href="https://wizytowka.rzetelnafirma.pl/VSBNO356" role="button"
+              target="_blank">
+              <img class="title-img-rzf" src="{% static 'images/rzf_logo1.png' %}" alt="rzetelna firma">
+            </a>
+          </div>
+          <div class="row mt-lg-5 mb-lg-5">
+            <h2 class="big-heading pl-0 pt-4">{% trans "Professionalism" %}</h2>
+            <h2 class="big-heading pl-0">{% trans "Responsibility" %}</h2>
+            <h2 class="big-heading pl-0 pb-4">{% trans "Timeliness" %}</h2>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class='title-img-right'>
+            <img class="title-img" src="{% static 'images/workers.jpg' %}" alt="foto_workers">
+          </div>
+        </div>
+      </div>
+      {% endblock %}
+
+  {% block content %}
+  <!-- About Company -->
+  <section class="white-section" id="info">
+    <div class="container-fluid">
+      <div class="row">
+        <h1>{% trans "ABOUT THE COMPANY"%}</h1>
+        <hr>
+        <div class="col-lg about-company">
+          <p>
+            {% blocktrans %}We employ highly qualified engineers and production specialising in all jobs required to build and renovate
+            ships. Our staff together with REMONTOWA shipyard were engaged in construction of ships for the Royal Navy
+            (Great Britain). {% endblocktrans %} 
+          </p>
+          <br />
+          <p>
+            {%blocktrans %} We also have a possibility to make, in co-operation with the REMONTOWA shipyard group, unequipped complete
+            hulls which, when towed to any harbour, may be equipped and outfitted by the Klient. {% endblocktrans %}
+          </p>
+          <br/>
+          <p>
+            {%blocktrans %} We also have a possibility to make, in co-operation with the REMONTOWA shipyard group, unequipped complete
+            We also perform maintenance repairs on merchant ships during voyages. Our technical personnel speak fluent
+            English and our middle and basic level supervisors know English well enough to communicate and get works
+            done. Our workers can speak basic English. {% endblocktrans %}
+          </p>
+          <br />
+          <p>
+            {%blocktrans %} We also have a possibility to make, in co-operation with the REMONTOWA shipyard group, unequipped complete
+            The technologies employed by our chief business partner and thus by our Company are the latest and the most
+            modern solutions in Europe and in the world. This is confirmed by the fact that the Royal Navy decided to
+            place an order for four highly specialised vessels with REMONTOWA shipyard.
+            Our Company cooperates with a Canadian company Bombardier in the territory of Poland in the field of
+            assembly
+            works, welding and coating application works required to be performed for construction of a rolling stock.
+            {% endblocktrans %}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- gallery -->
+  <section class="colored-section" id="gallery">
+    <div id="carouselGallery" class="carousel slide" data-bs-ride="carousel">
+      <h2 class="gallery-text">{% trans "Work for our partners:"%}<br> {% trans "REMONTOWA (Shipbuilding S.A.) and BOMBARDIER."%}</h2>
+      <div class="carousel-inner">
+        <div class="carousel-item container-fluid active">
+          <img class="gallery-img bombardier" src="{% static 'images/dort-pol/bombardier/16.jpg' %}" alt="remontova-1">
+          <img class="gallery-img" src="{% static 'images/dort-pol/remontova/12.jpg' %}" alt="remontova-2">
+        </div>
+        <div class="carousel-item container-fluid">
+          <img class="gallery-img" src="{% static 'images/dort-pol/remontova/8.jpg' %}" alt="remontova-3">
+          <img class="gallery-img" src="{% static 'images/dort-pol/remontova/7.jpg' %}" alt="remontova-4">
+        </div>
+        <div class="carousel-item container-fluid">
+          <img class="gallery-img" src="{% static 'images/dort-pol/remontova/9.jpg' %}" alt="remontova-3">
+          <img class="gallery-img" src="{% static 'images/dort-pol/remontova/10.jpg' %}" alt="remontova-4">
+        </div>
+        <div class="carousel-item container-fluid">
+          <img class="gallery-img" src="{% static 'images/dort-pol/remontova/11.jpg' %}" alt="remontova-3">
+          <img class="gallery-img" src="{% static 'images/dort-pol/remontova/2.jpg' %}" alt="remontova-4">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselGallery" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselGallery" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="white-section" id="info_str">
+    <div class="container-fluid">
+      <div class="row">
+        <h3>{% trans "COMPANY STRUCTURE"%}</h3>
+        <hr>
+        <div class="col-lg about-company">
+          <h5>{% trans "Currently, after several changes, the our Company is structured as follows:"%}</h5>
+          <h5><strong>{% trans "Shipyard Department"%}:</strong></h5>
+          <ul>
+            <li>{% trans "ironworking and welding services"%}</li>
+            <li>{% trans "assembly of ship structures"%}</li>
+          </ul>
+          <h5><strong>{% trans "Anticorrosion Department:"%}</strong></h5>
+          <ul>
+            <li>{% trans "sandblasting and hydrodynamic cleaning services"%}</li>
+            <li>{% trans "spray painting services"%}</li>
+            <li>{% trans "rubber coating services"%}</li>
+            <li>{% trans "processing of plastics"%}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endblock %}

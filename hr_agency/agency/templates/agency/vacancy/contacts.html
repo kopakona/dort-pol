@@ -1,0 +1,67 @@
+{% extends "agency/base.html" %}
+{% load i18n %}
+{% load static %}
+
+{% block title %}
+    Dort-Pol: {% trans "Contacts"%}
+{% endblock%}
+{% block style %}
+  <!-- Project CSS -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/contacts.css' %}">
+{% endblock %}
+
+{% block big_title %}
+{% endblock %}
+
+{% block content %}
+  <section id="contacts">
+    <div class="container-fluid">
+      <!-- Contacts -->
+      <div id='browser'>
+        <div id='browser-bar'>
+          <p class="contact-us">{% trans "Contact Us"%}</p>
+        </div>
+        <div id='content'>
+          <div id='left'>
+            <div id='map'>
+              <p>Where To Find Us</p>
+              <iframe class="google-frame"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d833.9783069323832!2d18.650364332058018!3d54.35647600019939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd73741018198f%3A0x953c01b8466c76f3!2sOrganika%20Trade%20building%20in%20Gda%C5%84sk!5e0!3m2!1sru!2sua!4v1618490468988!5m2!1sru!2sua"
+                height=90% width=100% style="border:0;" allowfullscreen="" loading="lazy">
+              </iframe>
+            </div>
+          </div>
+          <div id='right'>
+            <p class="get-contact">{% trans "Get in Contact"%}</p>
+            {% if sent %}
+            <form>
+              <div class="row mt-5 mb-5 pt-5 pb-5">
+                <p class="successfully-sent">{% trans "Email successfully sent"%}</p>
+              </div>
+            </form>
+            {% else %}
+            <form action="." method="post">
+              {% csrf_token %}
+              {{ form.as_p}}
+              <input type='submit' value={% trans "Send"%}>
+            </form>
+            {% endif %}
+            <p>{% trans "legal address"%}</p>
+            <i class="bi bi-house"></i>
+            <p class='other other-address'>Dort-Pol Sp.z.o.o., ul. Smolna, 1D 81-877, Sopot, Polska</p>
+            <p>{% trans "other way"%}</p>
+            <p class='other'>
+              <i class="bi bi-envelope"></i>
+              <a href='#'>biuro@dort-pol.eu</a>
+            </p>
+            <i class="bi bi-telephone"></i>
+            <p class='other'>+48 602 211 267</p>
+            <i class="bi bi-telephone-plus"></i>
+            <p class='other'>+48 58 303 60 27</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

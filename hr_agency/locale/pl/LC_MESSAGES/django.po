@@ -1,0 +1,431 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-13 20:12+0300\n"
+"PO-Revision-Date: 2021-04-24 13:33+0000\n"
+"Last-Translator: b'  <admin@admin.com>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n"
+"%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n"
+"%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"X-Translated-Using: django-rosetta 0.9.6\n"
+
+#: agency/admin.py:10 agency/models.py:15
+msgid "description"
+msgstr "Opis"
+
+#: agency/forms.py:8 agency/forms.py:17
+#: agency/templates/agency/vacancy/feedback.html:54
+msgid "Email"
+msgstr "E-mail"
+
+#: agency/forms.py:9
+msgid "Subject"
+msgstr "Przedmiot"
+
+#: agency/forms.py:10 agency/forms.py:24
+#: agency/templates/agency/vacancy/feedback.html:115
+msgid "Message"
+msgstr "Wiadomość"
+
+#: agency/forms.py:15 agency/templates/agency/vacancy/feedback.html:37
+msgid "First Name"
+msgstr "Imię"
+
+#: agency/forms.py:16 agency/templates/agency/vacancy/feedback.html:45
+msgid "Last Name"
+msgstr "Nazwisko"
+
+#: agency/forms.py:18 agency/templates/agency/vacancy/feedback.html:62
+msgid "Phone"
+msgstr "Telefon"
+
+#: agency/forms.py:19 agency/templates/agency/vacancy/feedback.html:72
+msgid "Address"
+msgstr "Nazwisko"
+
+#: agency/forms.py:20
+msgid "Age"
+msgstr "Wiek"
+
+#: agency/forms.py:21 agency/templates/agency/vacancy/detail.html:22
+#: agency/templates/agency/vacancy/feedback.html:89
+msgid "Vacancy"
+msgstr "Luka w zatrudnieniu"
+
+#: agency/forms.py:22 agency/templates/agency/vacancy/feedback.html:96
+msgid "Experience"
+msgstr "Doświadczenie"
+
+#: agency/forms.py:23 agency/templates/agency/vacancy/feedback.html:106
+msgid "Describe your qualification"
+msgstr "Opisz swoje kwalifikacje"
+
+#: agency/forms.py:23
+msgid "Qualification"
+msgstr "Kwalifikacja"
+
+#: agency/models.py:12
+msgid "title"
+msgstr "tytuł"
+
+#: agency/models.py:14
+msgid "salary"
+msgstr "salary"
+
+#: agency/models.py:18
+msgid "agency_posts"
+msgstr "agency_posty"
+
+#: agency/models.py:19
+msgid "publish"
+msgstr "publikować"
+
+#: agency/models.py:20
+msgid "created"
+msgstr "zaktualizowany"
+
+#: agency/models.py:21
+msgid "updated"
+msgstr "zaktualizowany"
+
+#: agency/models.py:22
+msgid "available"
+msgstr "dostępny"
+
+#: agency/templates/agency/base.html:65
+msgid "About the Сompany"
+msgstr "O firmie"
+
+#: agency/templates/agency/base.html:69
+msgid "Our Vacancies"
+msgstr "Nasze oferty pracy"
+
+#: agency/templates/agency/base.html:73
+#: agency/templates/agency/vacancy/contacts.html:6
+msgid "Contacts"
+msgstr "Łączność"
+
+#: agency/templates/agency/pagination.html:6
+msgid "Previous"
+msgstr "Poprzedni"
+
+#: agency/templates/agency/pagination.html:9
+msgid "Page"
+msgstr "Strona"
+
+#: agency/templates/agency/pagination.html:12
+msgid "of"
+msgstr "z"
+
+#: agency/templates/agency/pagination.html:16
+msgid "Next"
+msgstr "Kolejny"
+
+#: agency/templates/agency/vacancy/contacts.html:23
+msgid "Contact Us"
+msgstr "Skontaktuj się z nami"
+
+#: agency/templates/agency/vacancy/contacts.html:36
+msgid "Get in Contact"
+msgstr "Skontaktuj się"
+
+#: agency/templates/agency/vacancy/contacts.html:40
+msgid "Email successfully sent"
+msgstr "E-mail wysłany pomyślnie"
+
+#: agency/templates/agency/vacancy/contacts.html:47
+#: agency/templates/agency/vacancy/feedback.html:125
+msgid "Send"
+msgstr "Wysłać"
+
+#: agency/templates/agency/vacancy/contacts.html:50
+msgid "legal address"
+msgstr "legalny adres"
+
+#: agency/templates/agency/vacancy/contacts.html:53
+msgid "other way"
+msgstr "inny sposób"
+
+#: agency/templates/agency/vacancy/detail.html:7
+msgid "Vacancy detail"
+msgstr "Szczegóły dotyczące wolnych miejsc pracy"
+
+#: agency/templates/agency/vacancy/detail.html:26
+msgid "Job description"
+msgstr "Opis pracy"
+
+#: agency/templates/agency/vacancy/detail.html:27
+#: agency/templates/agency/vacancy/list.html:38
+msgid "Salary"
+msgstr "Wynagrodzenie"
+
+#: agency/templates/agency/vacancy/detail.html:31
+msgid "Apply now"
+msgstr "Aplikuj teraz"
+
+#: agency/templates/agency/vacancy/detail.html:34
+#: agency/templates/agency/vacancy/list.html:48
+msgid "Published"
+msgstr "Opublikowany"
+
+#: agency/templates/agency/vacancy/feedback.html:8
+msgid "Apply"
+msgstr "Zastosować"
+
+#: agency/templates/agency/vacancy/feedback.html:22
+msgid "Online interview survey"
+msgstr "Ankieta do wywiadu online"
+
+#: agency/templates/agency/vacancy/feedback.html:26
+msgid "Successfully sent"
+msgstr "Online interview survey"
+
+#: agency/templates/agency/vacancy/feedback.html:33
+msgid "Personal information"
+msgstr "Informacje osobiste"
+
+#: agency/templates/agency/vacancy/feedback.html:38
+msgid "Your First Name"
+msgstr "Pomyślnie wysłane"
+
+#: agency/templates/agency/vacancy/feedback.html:46
+msgid "Your Last Name"
+msgstr "Twoje nazwisko"
+
+#: agency/templates/agency/vacancy/feedback.html:73
+msgid "Country, City"
+msgstr "Kraj, miasto"
+
+#: agency/templates/agency/vacancy/feedback.html:79
+msgid "Your Age"
+msgstr "Twój wiek"
+
+#: agency/templates/agency/vacancy/feedback.html:80
+msgid "for example"
+msgstr "na przykład"
+
+#: agency/templates/agency/vacancy/feedback.html:86
+#: agency/templates/agency/vacancy/feedback.html:109
+msgid "Other information"
+msgstr "Inne informacje"
+
+#: agency/templates/agency/vacancy/feedback.html:90
+msgid "Vacancy name"
+msgstr "Nazwa wakatu"
+
+#: agency/templates/agency/vacancy/feedback.html:97
+msgid "for example: 2 year"
+msgstr "na przykład: 2 lata"
+
+#: agency/templates/agency/vacancy/feedback.html:105
+msgid "Your qualification"
+msgstr "Twoje kwalifikacje"
+
+#: agency/templates/agency/vacancy/index.html:21
+msgid "Professionalism"
+msgstr "Profesjonalizm"
+
+#: agency/templates/agency/vacancy/index.html:22
+msgid "Responsibility"
+msgstr "Odpowiedzialność"
+
+#: agency/templates/agency/vacancy/index.html:23
+msgid "Timeliness"
+msgstr "Aktualność"
+
+#: agency/templates/agency/vacancy/index.html:39
+msgid "ABOUT THE COMPANY"
+msgstr "O FIRMIE"
+
+#: agency/templates/agency/vacancy/index.html:43
+msgid ""
+"We employ highly qualified engineers and production specialising in all jobs "
+"required to build and renovate\n"
+"            ships. Our staff together with REMONTOWA shipyard were engaged "
+"in construction of ships for the Royal Navy\n"
+"            (Great Britain). "
+msgstr ""
+"Jesteśmy firm zajmującą się robotami stoczniowymi zarówno przy budowie "
+"nowych jednostek dla stoczni REMONTOWA jak i remontach i serwisie jednostek "
+"będących w eksploatacji.\n"
+"\n"
+"Posiadamy wysoko wykwalifikowaną kadrę inżynierską jak i robotników "
+"produkcyjnych we wszystkich specjalnościach niezbędnych przy budowie i "
+"remontach statków. Kadra nasza brała udział wraz ze stocznią REMONTOWA przy "
+"budowie okrętów dla Marynarki Wojennej Wielkiej Brytanii. "
+
+#: agency/templates/agency/vacancy/index.html:49
+msgid ""
+" We also have a possibility to make, in co-operation with the REMONTOWA "
+"shipyard group, unequipped complete\n"
+"            hulls which, when towed to any harbour, may be equipped and "
+"outfitted by the Klient. "
+msgstr ""
+"Mamy też możliwość we współpracy z grupą stoczni ?REMONTOWA? wykonywać nie "
+"wyposażone kompletne kadłuby jednostek, które po przeholowaniu do dowolnego "
+"portu mogą być wyposażane i uzbrajane przez zamawiającego."
+
+#: agency/templates/agency/vacancy/index.html:54
+msgid ""
+" We also have a possibility to make, in co-operation with the REMONTOWA "
+"shipyard group, unequipped complete\n"
+"            We also perform maintenance repairs on merchant ships during "
+"voyages. Our technical personnel speak fluent\n"
+"            English and our middle and basic level supervisors know English "
+"well enough to communicate and get works\n"
+"            done. Our workers can speak basic English. "
+msgstr ""
+"Wykonujemy też remonty konserwacyjne w trakcie rejsów na statkach "
+"handlowych. Nasza kadra techniczna biegle włada językiem angielskim "
+"natomiast średni i podstawowy nadzór wykonawczy posługuje się językiem "
+"angielskim w zakresie wystarczającym do prowadzenia prac. Podstawowi "
+"robotnicy posługują się językiem angielskim w podstawowym zakresie. "
+
+#: agency/templates/agency/vacancy/index.html:61
+msgid ""
+" We also have a possibility to make, in co-operation with the REMONTOWA "
+"shipyard group, unequipped complete\n"
+"            The technologies employed by our chief business partner and thus "
+"by our Company are the latest and the most\n"
+"            modern solutions in Europe and in the world. This is confirmed "
+"by the fact that the Royal Navy decided to\n"
+"            place an order for four highly specialised vessels with "
+"REMONTOWA shipyard.\n"
+"            Our Company cooperates with a Canadian company Bombardier in the "
+"territory of Poland in the field of\n"
+"            assembly\n"
+"            works, welding and coating application works required to be "
+"performed for construction of a rolling stock.\n"
+"            "
+msgstr ""
+"Technologie stosowane przez naszego głównego kontrahenta a tym samym przez "
+"nas to najnowsze i najnowocześniejsze rozwiązania w europie i na świecie. "
+"świadczyć o tym może fakt iż Marynarka Wojenna Wielkiej Brytanii zdecydowała "
+"się na zamówienie czterech wysoce wyspecjalizowanych jednostek w zespole "
+"stoczni REMONTOWA Firma nasza prowadzi współpracę na terenie Polski z "
+"kanadyjską firmą Bombardier w zakresie robót monterskich ,spawalniczych i "
+"lakierniczych przy budowie taboru kolejowego. "
+
+#: agency/templates/agency/vacancy/index.html:78
+msgid "Work for our partners:"
+msgstr "Pracuj dla naszych partnerów:"
+
+#: agency/templates/agency/vacancy/index.html:78
+msgid "REMONTOWA (Shipbuilding S.A.) and BOMBARDIER."
+msgstr "REMONTOWA (Shipbuilding S.A.) i BOMBARDIER."
+
+#: agency/templates/agency/vacancy/index.html:111
+msgid "COMPANY STRUCTURE"
+msgstr "STRUKTURA FIRMY"
+
+#: agency/templates/agency/vacancy/index.html:114
+msgid ""
+"Currently, after several changes, the our Company is structured as follows:"
+msgstr ""
+"Obecnie po wielu zmianach struktura naszej firmy przedstawia się następująco:"
+
+#: agency/templates/agency/vacancy/index.html:115
+msgid "Shipyard Department"
+msgstr "Wydział Antykorozyjny"
+
+#: agency/templates/agency/vacancy/index.html:117
+msgid "ironworking and welding services"
+msgstr "usługi ślusarskie i spawalnicze"
+
+#: agency/templates/agency/vacancy/index.html:118
+msgid "assembly of ship structures"
+msgstr "montaż konstrukcji okrętowych"
+
+#: agency/templates/agency/vacancy/index.html:120
+msgid "Anticorrosion Department:"
+msgstr "Wydział Antykorozyjny"
+
+#: agency/templates/agency/vacancy/index.html:122
+msgid "sandblasting and hydrodynamic cleaning services"
+msgstr "usługi piaskowania i czyszczenia hydrodynamicznego"
+
+#: agency/templates/agency/vacancy/index.html:123
+msgid "spray painting services"
+msgstr "usługi malowania natryskowego"
+
+#: agency/templates/agency/vacancy/index.html:124
+msgid "rubber coating services"
+msgstr "usługi powlekania gumy"
+
+#: agency/templates/agency/vacancy/index.html:125
+msgid "processing of plastics"
+msgstr "przetwarzanie tworzyw sztucznych"
+
+#: agency/templates/agency/vacancy/list.html:5
+msgid "Vacancies"
+msgstr "Wakaty"
+
+#: agency/templates/agency/vacancy/list.html:25
+msgid "Currently, all vacancies are closed."
+msgstr ""
+
+#: agency/templates/agency/vacancy/list.html:26
+msgid "Follow the updates on our website or fill out the form."
+msgstr ""
+
+#: agency/templates/agency/vacancy/list.html:27
+msgid ""
+"We will review it and we will contact you as soon as there are vacancies."
+msgstr ""
+
+#: agency/templates/agency/vacancy/list.html:31
+msgid "Fill Form"
+msgstr "Wypełnić formularz"
+
+#: agency/templates/agency/vacancy/list.html:46
+msgid "Read more"
+msgstr "Czytaj więcej"
+
+#: hr_agency/settings.py:123
+msgid "English"
+msgstr "język Angielski"
+
+#: hr_agency/settings.py:124
+msgid "Ukrainian"
+msgstr "Ukraiński"
+
+#: hr_agency/settings.py:125
+msgid "Polish"
+msgstr "Polskie"
+
+#: hr_agency/settings.py:126
+msgid "Russian"
+msgstr "Rosyjski"
+
+#~ msgid ""
+#~ "\n"
+#~ "                        <h1>\n"
+#~ "                            Currently, all vacancies are closed. "
+#~ "<br>Follow the updates on our website or fill out the form.<br> \n"
+#~ "                            We will review it and we will contact you as "
+#~ "soon as there are vacancies.\n"
+#~ "                        </h1>\n"
+#~ "                        "
+#~ msgstr ""
+#~ "\n"
+#~ "<h1>\n"
+#~ "Obecnie wszystkie oferty pracy są zamknięte. <br> Śledź aktualizacje w "
+#~ "naszej witrynie lub wypełnij formularz. <br>\n"
+#~ "Sprawdzimy to i skontaktujemy się z Tobą, gdy tylko pojawią się wolne "
+#~ "miejsca.\n"
+#~ "</h1>"
+
+#~ msgid "Questions"
+#~ msgstr "Pytania"

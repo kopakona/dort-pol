@@ -1,0 +1,56 @@
+{% extends "agency/base.html" %}
+{% load i18n %}
+{% load static %}
+{% block title %}
+    Dort-Pol: {% trans "Vacancies" %}
+{% endblock%}
+{% block style %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/list.css' %}">
+{% endblock %}
+
+{% block big_title %}
+{% endblock %}
+
+{% block content %} 
+    <section id="body-section">
+        <div class="container-fluid">
+        <!-- Vacancies list -->
+            <div class="row">
+                {% if vacancies|length == 0 %}
+                    <div class="card text-white card-color mt-3 mb-5 col-lg-8 p-lg-5 mx-auto" style="max-width: 100%; line-height: 1.5;">
+                        <div class="card-body mt-3 mb-3" style="height: 70vh"> 
+                            
+                            <h3>
+                                {% trans "Currently, all vacancies are closed." %} <br>
+                                {% trans "Follow the updates on our website or fill out the form." %} <br>
+                                {% trans "We will review it and we will contact you as soon as there are vacancies." %}
+                            </h3>
+                            
+                            <!-- Button trigger modal -->
+                            <a href="{% url 'agency:feedback' %}" class="btn btn-lg btn-outline-light mt-4">{% trans "Fill Form" %}</a>
+                        </div>
+                    </div>
+                {% else %}
+                
+                {% for vacancy in vacancies %}
+                    <div class="card text-white card-color mb-4" style="max-width: 100%;">
+                        <div class="card-header bg-transparent card-border">{% trans "Salary" %}: {{ vacancy.salary }}</div>
+                        <div class="card-body">
+                            <h5 class="card-title">{{vacancy.title}}</h5>
+                            {% with vacancy.description|striptags|truncatechars:140 as description %}
+                            <p class="card-text">{{ description }}</p>
+                            {% endwith %}
+                            <!-- Button trigger modal -->
+                            <a href="{{vacancy.get_absolute_url}}" class="btn btn-sm btn-outline-light mt-2 mb-3">{% trans "Read more" %}</a>
+                        </div>
+                        <div class="card-footer bg-transparent card-border ml-4 mb-4">{% trans "Published" %} {{vacancy.publish}}</div>
+                    </div>
+                {% endfor %}
+            </div>
+            {% include "agency/pagination.html" with page=page_obj %}
+            {% endif %}
+        </div>
+
+    </section>
+{% endblock %}

@@ -1,0 +1,412 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-13 20:12+0300\n"
+"PO-Revision-Date: 2021-09-13 17:20+0000\n"
+"Last-Translator: b'  <admin@admin.com>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"X-Translated-Using: django-rosetta 0.9.6\n"
+
+#: agency/admin.py:10 agency/models.py:15
+msgid "description"
+msgstr "Описание"
+
+#: agency/forms.py:8 agency/forms.py:17
+#: agency/templates/agency/vacancy/feedback.html:54
+msgid "Email"
+msgstr "Email"
+
+#: agency/forms.py:9
+msgid "Subject"
+msgstr "Предмет"
+
+#: agency/forms.py:10 agency/forms.py:24
+#: agency/templates/agency/vacancy/feedback.html:115
+msgid "Message"
+msgstr "Сообщение"
+
+#: agency/forms.py:15 agency/templates/agency/vacancy/feedback.html:37
+msgid "First Name"
+msgstr "Имя"
+
+#: agency/forms.py:16 agency/templates/agency/vacancy/feedback.html:45
+msgid "Last Name"
+msgstr "Фамилия"
+
+#: agency/forms.py:18 agency/templates/agency/vacancy/feedback.html:62
+msgid "Phone"
+msgstr "Телефон"
+
+#: agency/forms.py:19 agency/templates/agency/vacancy/feedback.html:72
+msgid "Address"
+msgstr "Адрес"
+
+#: agency/forms.py:20
+msgid "Age"
+msgstr "Возраст"
+
+#: agency/forms.py:21 agency/templates/agency/vacancy/detail.html:22
+#: agency/templates/agency/vacancy/feedback.html:89
+msgid "Vacancy"
+msgstr "Вакансия"
+
+#: agency/forms.py:22 agency/templates/agency/vacancy/feedback.html:96
+msgid "Experience"
+msgstr "Опыт"
+
+#: agency/forms.py:23 agency/templates/agency/vacancy/feedback.html:106
+msgid "Describe your qualification"
+msgstr "Опишите свою квалификацию"
+
+#: agency/forms.py:23
+msgid "Qualification"
+msgstr "Квалификация"
+
+#: agency/models.py:12
+msgid "title"
+msgstr "заглавие"
+
+#: agency/models.py:14
+msgid "salary"
+msgstr "оплата труда"
+
+#: agency/models.py:18
+msgid "agency_posts"
+msgstr "agency_posts"
+
+#: agency/models.py:19
+msgid "publish"
+msgstr "опубликовать"
+
+#: agency/models.py:20
+msgid "created"
+msgstr "созданный"
+
+#: agency/models.py:21
+msgid "updated"
+msgstr "обновлено"
+
+#: agency/models.py:22
+msgid "available"
+msgstr "имеется в наличии"
+
+#: agency/templates/agency/base.html:65
+msgid "About the Сompany"
+msgstr "О компании"
+
+#: agency/templates/agency/base.html:69
+msgid "Our Vacancies"
+msgstr "Наши вакансии"
+
+#: agency/templates/agency/base.html:73
+#: agency/templates/agency/vacancy/contacts.html:6
+msgid "Contacts"
+msgstr "Контакты"
+
+#: agency/templates/agency/pagination.html:6
+msgid "Previous"
+msgstr "Предыдущая"
+
+#: agency/templates/agency/pagination.html:9
+msgid "Page"
+msgstr "Страница"
+
+#: agency/templates/agency/pagination.html:12
+msgid "of"
+msgstr "с"
+
+#: agency/templates/agency/pagination.html:16
+msgid "Next"
+msgstr "Следующая"
+
+#: agency/templates/agency/vacancy/contacts.html:23
+msgid "Contact Us"
+msgstr "Свяжитесь с нами"
+
+#: agency/templates/agency/vacancy/contacts.html:36
+msgid "Get in Contact"
+msgstr "Напишите нам"
+
+#: agency/templates/agency/vacancy/contacts.html:40
+msgid "Email successfully sent"
+msgstr "Электронное письмо успешно отправлено"
+
+#: agency/templates/agency/vacancy/contacts.html:47
+#: agency/templates/agency/vacancy/feedback.html:125
+msgid "Send"
+msgstr "Отправить"
+
+#: agency/templates/agency/vacancy/contacts.html:50
+msgid "legal address"
+msgstr "Юридический адрес"
+
+#: agency/templates/agency/vacancy/contacts.html:53
+msgid "other way"
+msgstr "другой путь"
+
+#: agency/templates/agency/vacancy/detail.html:7
+msgid "Vacancy detail"
+msgstr "Детали вакансии"
+
+#: agency/templates/agency/vacancy/detail.html:26
+msgid "Job description"
+msgstr "Описание работы"
+
+#: agency/templates/agency/vacancy/detail.html:27
+#: agency/templates/agency/vacancy/list.html:38
+msgid "Salary"
+msgstr "Оплата труда"
+
+#: agency/templates/agency/vacancy/detail.html:31
+msgid "Apply now"
+msgstr "Подать заявку"
+
+#: agency/templates/agency/vacancy/detail.html:34
+#: agency/templates/agency/vacancy/list.html:48
+msgid "Published"
+msgstr "Опубликовано"
+
+#: agency/templates/agency/vacancy/feedback.html:8
+msgid "Apply"
+msgstr "Подать заявку"
+
+#: agency/templates/agency/vacancy/feedback.html:22
+msgid "Online interview survey"
+msgstr "Опрос онлайн-интервью"
+
+#: agency/templates/agency/vacancy/feedback.html:26
+msgid "Successfully sent"
+msgstr "Успешно отправлено"
+
+#: agency/templates/agency/vacancy/feedback.html:33
+msgid "Personal information"
+msgstr "Персональная информация"
+
+#: agency/templates/agency/vacancy/feedback.html:38
+msgid "Your First Name"
+msgstr "Ваше имя"
+
+#: agency/templates/agency/vacancy/feedback.html:46
+msgid "Your Last Name"
+msgstr "Ваша фамилия"
+
+#: agency/templates/agency/vacancy/feedback.html:73
+msgid "Country, City"
+msgstr "Страна, город"
+
+#: agency/templates/agency/vacancy/feedback.html:79
+msgid "Your Age"
+msgstr "Ваш возраст"
+
+#: agency/templates/agency/vacancy/feedback.html:80
+msgid "for example"
+msgstr "например"
+
+#: agency/templates/agency/vacancy/feedback.html:86
+#: agency/templates/agency/vacancy/feedback.html:109
+msgid "Other information"
+msgstr "Дополнительная информация"
+
+#: agency/templates/agency/vacancy/feedback.html:90
+msgid "Vacancy name"
+msgstr "Название вакансии"
+
+#: agency/templates/agency/vacancy/feedback.html:97
+msgid "for example: 2 year"
+msgstr "например: 2 года"
+
+#: agency/templates/agency/vacancy/feedback.html:105
+msgid "Your qualification"
+msgstr "Ваша квалификация"
+
+#: agency/templates/agency/vacancy/index.html:21
+msgid "Professionalism"
+msgstr "Профессионализм"
+
+#: agency/templates/agency/vacancy/index.html:22
+msgid "Responsibility"
+msgstr "Ответственность"
+
+#: agency/templates/agency/vacancy/index.html:23
+msgid "Timeliness"
+msgstr "Своевременность"
+
+#: agency/templates/agency/vacancy/index.html:39
+msgid "ABOUT THE COMPANY"
+msgstr "О КОМПАНИИ"
+
+#: agency/templates/agency/vacancy/index.html:43
+msgid ""
+"We employ highly qualified engineers and production specialising in all jobs required to build and renovate\n"
+"            ships. Our staff together with REMONTOWA shipyard were engaged in construction of ships for the Royal Navy\n"
+"            (Great Britain). "
+msgstr ""
+"Мы занимаемся судостроительными работами как при строительстве новых "
+"агрегатов для судостроительного завода \"REMONTOWA\", так и при ремонте и "
+"обслуживании судов,  которые уже эксплуатируются. Мы также проводим "
+"ремонтные работы во время круизов на коммерческих и транспортных судах."
+
+#: agency/templates/agency/vacancy/index.html:49
+msgid ""
+" We also have a possibility to make, in co-operation with the REMONTOWA shipyard group, unequipped complete\n"
+"            hulls which, when towed to any harbour, may be equipped and outfitted by the Klient. "
+msgstr ""
+"У нас также есть возможность работать с группой верфей, строить неполные "
+"корпуса судов, которые после буксировки к любому порту могут быть оснащены "
+"заказчиком по собственному желанию."
+
+#: agency/templates/agency/vacancy/index.html:54
+msgid ""
+" We also have a possibility to make, in co-operation with the REMONTOWA shipyard group, unequipped complete\n"
+"            We also perform maintenance repairs on merchant ships during voyages. Our technical personnel speak fluent\n"
+"            English and our middle and basic level supervisors know English well enough to communicate and get works\n"
+"            done. Our workers can speak basic English. "
+msgstr ""
+"У нас есть высококвалифицированный инженерный персонал и производственные "
+"работники всех специальностей, необходимых для строительства и ремонта "
+"судов. Наши сотрудники участвовали с судостроительным заводом \"REMONTOWA\" "
+"в строительстве кораблей для ВМС Великобритании."
+
+#: agency/templates/agency/vacancy/index.html:61
+msgid ""
+" We also have a possibility to make, in co-operation with the REMONTOWA shipyard group, unequipped complete\n"
+"            The technologies employed by our chief business partner and thus by our Company are the latest and the most\n"
+"            modern solutions in Europe and in the world. This is confirmed by the fact that the Royal Navy decided to\n"
+"            place an order for four highly specialised vessels with REMONTOWA shipyard.\n"
+"            Our Company cooperates with a Canadian company Bombardier in the territory of Poland in the field of\n"
+"            assembly\n"
+"            works, welding and coating application works required to be performed for construction of a rolling stock.\n"
+"            "
+msgstr ""
+"Наш технический персонал свободно владеет английским языком, тогда как "
+"промежуточный и базовый руководящий надзор использует английский язык "
+"настолько, насколько достаточно для выполнения работы. Основные работники "
+"владеют английским языком. Технологии, используемые нашим главным "
+"подрядчиком, а следовательно, и нами, является новейшими современными "
+"решениями, которые использубтся в Европе и мире. Наша компания сотрудничает "
+"с канадской компанией Bombardier на территории Польши в области монтажных "
+"работ, сварки и нанесения покрытий, необходимых для строительства подвижного"
+" состава."
+
+#: agency/templates/agency/vacancy/index.html:78
+msgid "Work for our partners:"
+msgstr "Работаем для наших партнеров:"
+
+#: agency/templates/agency/vacancy/index.html:78
+msgid "REMONTOWA (Shipbuilding S.A.) and BOMBARDIER."
+msgstr "REMONTOWA (Shipbuilding S.A.) и BOMBARDIER."
+
+#: agency/templates/agency/vacancy/index.html:111
+msgid "COMPANY STRUCTURE"
+msgstr "СТРУКТУРА КОМПАНИИ"
+
+#: agency/templates/agency/vacancy/index.html:114
+msgid ""
+"Currently, after several changes, the our Company is structured as follows:"
+msgstr "В настоящее время наша Компания имеет следующую структуру:"
+
+#: agency/templates/agency/vacancy/index.html:115
+msgid "Shipyard Department"
+msgstr "Судостроительный отдел:"
+
+#: agency/templates/agency/vacancy/index.html:117
+msgid "ironworking and welding services"
+msgstr "предоставление услуг по выполнению слесарных и сварочных работ"
+
+#: agency/templates/agency/vacancy/index.html:118
+msgid "assembly of ship structures"
+msgstr "монтаж судовых конструкций"
+
+#: agency/templates/agency/vacancy/index.html:120
+msgid "Anticorrosion Department:"
+msgstr "Антикоррозийное отделения:"
+
+#: agency/templates/agency/vacancy/index.html:122
+msgid "sandblasting and hydrodynamic cleaning services"
+msgstr ""
+"предоставление услуг по очистке поверхностей пескоструйной обработкой и "
+"гидродинамическими методами"
+
+#: agency/templates/agency/vacancy/index.html:123
+msgid "spray painting services"
+msgstr "покраска спреем"
+
+#: agency/templates/agency/vacancy/index.html:124
+msgid "rubber coating services"
+msgstr ""
+"услуги по нанесению резинового покрытия обработка пластмасс / сварки "
+"пластмасс"
+
+#: agency/templates/agency/vacancy/index.html:125
+msgid "processing of plastics"
+msgstr "processing of plastics"
+
+#: agency/templates/agency/vacancy/list.html:5
+msgid "Vacancies"
+msgstr "Вакансии"
+
+#: agency/templates/agency/vacancy/list.html:25
+msgid "Currently, all vacancies are closed."
+msgstr "В настоящее время все вакансии закрыты."
+
+#: agency/templates/agency/vacancy/list.html:26
+msgid "Follow the updates on our website or fill out the form."
+msgstr "Следите за обновлениями на нашем сайте или заполните форму-резюме."
+
+#: agency/templates/agency/vacancy/list.html:27
+msgid ""
+"We will review it and we will contact you as soon as there are vacancies."
+msgstr "Мы её рассмотрим и свяжемся с вами, как только появятся вакансии."
+
+#: agency/templates/agency/vacancy/list.html:31
+msgid "Fill Form"
+msgstr "Заполнить форму"
+
+#: agency/templates/agency/vacancy/list.html:46
+msgid "Read more"
+msgstr "Читать далее"
+
+#: hr_agency/settings.py:123
+msgid "English"
+msgstr "Английский"
+
+#: hr_agency/settings.py:124
+msgid "Ukrainian"
+msgstr "Украинский"
+
+#: hr_agency/settings.py:125
+msgid "Polish"
+msgstr "Польский"
+
+#: hr_agency/settings.py:126
+msgid "Russian"
+msgstr "Русский"
+
+#~ msgid ""
+#~ "\n"
+#~ "                        <h1>\n"
+#~ "                            Currently, all vacancies are closed. <br>Follow the updates on our website or fill out the form.<br> \n"
+#~ "                            We will review it and we will contact you as soon as there are vacancies.\n"
+#~ "                        </h1>\n"
+#~ "                        "
+#~ msgstr ""
+#~ "\n"
+#~ "<h1>\n"
+#~ "В настоящее время все вакансии закрыты. <br> Следите за обновлениями на нашем сайте или заполните форму. <br>\n"
+#~ "Мы ее рассмотрим и свяжемся с вами, как только появятся вакансии.\n"
+#~ "</h1>"
+
+#~ msgid "Questions"
+#~ msgstr "Вопросы"

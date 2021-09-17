@@ -1,0 +1,214 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600);
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 100%;
+    background: #829292;
+    /* height: 100vh; */
+ }
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.container-fluid {
+    padding: 0 15%;
+}
+
+.languages a {
+    margin-right: 0px;
+}
+
+#title .container-fluid {
+    padding: 2% 15% 0;
+}
+
+#footer {
+    padding: 3% 15% 3%;
+}
+
+#contacts {
+    background-color: #164A41;
+}
+
+#browser {
+    
+    margin: 0px auto;
+    color: white;
+    -webkit-box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+#browser-bar {
+    background: #394141;
+    width: 100%;
+    padding: 8px;
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 0.9em;
+    position: relative;
+}
+
+#browser-bar p {
+    text-align: center;
+    margin-bottom: 0px;
+    padding: 5px 0;
+
+}
+
+#content {
+    background: #454f4f;
+}
+
+#content:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#content #left {
+    float: left;
+    width: 75%;
+    background: #4D774E;
+}
+
+#content #left #map {
+    height: 40vmax;
+    position: relative;
+    background-size: cover;
+}
+
+@media all and (max-width: 1000px) {
+
+    #title .container-fluid, #footer, #contacts .container-fluid {
+        padding: 0 5%;
+    }
+
+    #footer {
+        padding: 3% 5% 3%;
+    }
+
+    #content #left {
+        width: 100%;
+    }
+
+    /* #content #left #map {
+        /* height: 300px; 
+    }*/
+    
+    .google-frame {
+        height: 85%;
+    }
+}
+
+#content #left #map p {
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-left: 30px;
+    text-align: left;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+@media all and (max-width: 780px) {
+    #content #left #map p {
+        padding-top: 20px;
+        padding-left: 0px;
+        text-align: center;
+    }
+}
+
+#content #right {
+    float: left;
+    width: 25%;
+    background: #454f4f;
+    font-size: 0.75em;
+    padding: 15px;
+}
+
+@media all and (max-width: 1000px) {
+    #content #right {
+        width: 100%;
+    }
+}
+
+#right .get-contact {
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+@media all and (max-width: 780px) {
+    
+    #right .get-contact {
+        margin-top: 20px;
+        text-transform: uppercase;
+    }
+}
+
+#content #right a:hover {
+    color: #51b2d6;
+}
+
+#content #right form {
+    border-top: solid thin #8e9699;
+    border-bottom: solid thin #8e9699;
+    margin: 20px 0;
+    padding: 20px 0;
+}
+
+#content #right form input, #content #right form textarea {
+    background: #394141;
+    padding: 8px;
+    margin-bottom: 8px;
+    width: 100%;
+    color: white;
+}
+
+#content #right form input:last-of-type, #content #right form textarea:last-of-type {
+    margin-bottom: 0;
+}
+
+#content #right form input[type="submit"], #content #right form textarea[type="submit"] {
+    text-transform: uppercase;
+    background: #4D774E;
+    width: 50%;
+    color: white;
+    margin-top: 5px;
+}
+
+#content #right form input[type="submit"]:hover, #content #right form textarea[type="submit"]:hover {
+    background: #4D774E;
+    -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#content #right form input[type="textarea"], #content #right form textarea[type="textarea"] {
+    min-height: 75px;
+    vertical-align: text-top;
+}
+
+#content #right p.other {
+    font-size: 0.7;
+    margin-bottom: 5px;
+    text-transform: lowercase;
+    font-weight: 100;
+}
+
+#content #right p.other-address{
+    text-transform: capitalize;
+}
+
+#content #right p.other, #content #right p.other a {
+    color: #8e9699;
+}
+
+#browser-bar #content #right form p.successfully-sent {
+    padding: 10px 0;
+    color: #F1B24A;
+}

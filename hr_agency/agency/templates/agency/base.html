@@ -1,0 +1,96 @@
+
+{% load static %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>{% block title %}Dort-Pol{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <!-- Project CSS -->
+  {% block style %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  {% endblock %}
+  <!-- Bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+</head>
+
+<body>
+  <!-- Title -->
+  <section class="colored-section" id="title">
+    <div class="container-fluid">
+      <!-- Nav Bar -->
+      <div class="row">
+        <div class="title-tel col-lg-6">
+          <a href="tel:+380988228375"><i class="bi bi-telephone"></i> +38 (063) 949 31 81
+          </a>
+        </div>
+        <div class="languages col-lg-6">
+          {% get_current_language as LANGUAGE_CODE %}
+          {% get_available_languages as LANGUAGES %}
+          {% get_language_info_list for LANGUAGES as languages %}
+        
+          <div>
+          {% for language  in languages%}
+            <a href="/{{language.code}}/"
+              {% if language.code == LANGUAGE_CODE %} class="selected-language" {% endif %}>
+              {% with images_path="images/languages/"|add:language.code|add:".png" %}
+                <img class="lang-img" src="{% static  images_path %}" alt="{{language.code}}">
+              {% endwith %}
+            </a>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="{% url 'agency:index' %}">DORT-POL</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'agency:index' %}">{% trans "About the Сompany" %}</a>
+            </li>
+            <li class="nav-item">
+            {% if LANGUAGE_CODE != 'en' %}
+              <a class="nav-link" href="{% url 'agency:vacancies_list' %}">{% trans "Our Vacancies"%}</a>
+            {% endif %}
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'agency:contacts' %}">{% trans "Contacts"%}</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      {% block big_title %}
+      {% endblock %}
+    </div>
+  </section>
+
+  {% block content %}
+  {% endblock %}
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p class="p-footer">© Copyright 2021: Dort-Pol</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

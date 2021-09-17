@@ -1,0 +1,125 @@
+{% extends "agency/base.html" %}
+
+{% load i18n %}
+{% load static %}
+
+{% block title %}
+    Dort-Pol: {% trans "Apply"%}
+{% endblock%}
+{% block style %}
+    <!-- Project CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/list.css' %}">
+{% endblock %}
+
+{% block big_title %}
+{% endblock %}
+
+{% block content %}
+    <section id="body-section">
+        <div class="container-fluid">
+            <h3 class="h-parameters text-dark">{% trans "Online interview survey" %}:</h3>
+            <hr class="card-border hr-feedback">
+            {% if sent %}
+            <div class="p-5 text-center text-white" style="height: 70vh">
+                <h2>{% trans "Successfully sent" %}</h2>
+            </div>
+            {% else %}
+            <!-- Feedback form -->
+            <form action="." method="post">
+                
+                {% csrf_token%}
+                <h5 class="h-parameters pt-3 pb-4 mt-5">{% trans "Personal information" %}:</h5>
+                <div class="row">
+                    <div class="form-group text-white pb-3 col-lg-6">
+                        <label for="first_name">{% trans "First Name" %}</label>
+                        <input name="first_name" type="text" class="form-control" id="first_name" required placeholder="{% trans "Your First Name" %}" >
+                        <div class="text-danger mt-1">
+                            {{ form.first_name.errors|striptags }}
+                        </div>
+                    </div>
+                    <div class="form-group text-white pb-3 col-lg-6">
+                        <label for="last_name">{% trans "Last Name" %}</label>
+                        <input name="last_name" type="text" class="form-control" required id="last_name" placeholder="{% trans "Your Last Name" %}">
+                        <div class="text-danger mt-1">
+                            {{ form.last_name.errors|striptags }}
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group text-white pb-3 col-lg-6">
+                        <label for="email">{% trans "Email" %}</label>
+                        <input name="email" type="email" class="form-control" id="email" required placeholder=""name@example.com"">
+                        <div class="text-danger mt-1">
+                            {{ form.email.errors|striptags }}
+                        </div>
+                    </div>
+                    <div class="form-group text-white pb-3 col-lg-6">
+                        <label for="phone">{% trans "Phone" %}</label>
+                        <input name="phone" type="text" class="form-control" id="phone" required placeholder="+ 48 602 211 267">
+                        <div class="text-danger mt-1">
+                            {{ form.phone.errors|striptags }}
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group text-white pb-3 col-lg-6">
+                        <label for="address">{% trans "Address" %}</label>
+                        <input name="address" type="text" class="form-control" id="address" required placeholder="{% trans "Country, City" %}">
+                        <div class="text-danger mt-1">
+                            {{ form.address.errors|striptags }}
+                        </div>
+                    </div>
+                    <div class="form-group text-white pb-3 col-lg-6">
+                        <label for="age">{% trans "Your Age" %}</label>
+                        <input name="age" type="text" class="form-control" id="age" required placeholder="{% trans "for example" %}: 28">
+                        <div class="text-danger mt-1">
+                            {{ form.age.errors|striptags }}
+                        </div>
+                    </div>
+                </div>
+                <h5 class="h-parameters pt-3">{% trans "Other information" %}:</h5>
+                <div class="row">
+                    <div class="form-group text-white pb-3 col-lg-6">
+                        <label for="vacancy">{% trans "Vacancy" %}</label>
+                        <input name="vacancy" type="text" class="form-control" id="vacancy" required placeholder="{% trans "Vacancy name" %}">
+                        <div class="text-danger mt-1">
+                            {{ form.vacancy.errors|striptags }}
+                        </div> 
+                    </div>
+                    <div class="form-group text-white pb-3 col-lg-6">
+                        <label for="experience">{% trans "Experience" %}</label>
+                        <input name="experience" type="text" class="form-control" id="experience" required placeholder="{% trans "for example: 2 year" %}">
+                    <div class="text-danger mt-1">
+                            {{ form.experience.errors|striptags }}
+                    </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group text-white pb-3 col-lg-6">
+                        <label for="qualification">{% trans "Your qualification" %}</label>
+                        <textarea name="qualification" class="form-control" id="qualification" autocomplete="on" required rows="3" placeholder="{% trans "Describe your qualification" %}"></textarea>
+                    </div>
+                    <div class="form-group text-white pb-3 col-lg-6">
+                        <label for="message">{% trans "Other information" %}</label>
+                        <textarea name="message" class="form-control" 
+                            id="message"   
+                            rows="3" 
+                            required 
+                            value="{{ form.message.value|default_if_none:'' }}"
+                            placeholder="{% trans "Message" %}"></textarea>
+                    </div>
+                    <div class="form-group text-white pt-5 pb-5 col-lg-6">
+                        <label for="{{ captcha.id_for_label }}">{{form.captcha.label}}</label>
+                        {{ form.captcha }}
+                        <div class="text-danger mt-1">
+                            {{form.captcha.errors|striptags }}
+                        </div>
+                    </div> 
+                </div>
+                <input type='submit' value={% trans "Send" %} class="btn btn-outline-light">
+            </form>
+            {% endif %}
+        </div>
+    </section>
+{% endblock %}

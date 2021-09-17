@@ -1,0 +1,333 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+h1, h2, h3 {  
+    font-family: 'Montserrat';
+    }
+
+
+/* Colores Section */
+.white-section {
+    background-color: #fff;
+}
+
+.colored-section {
+    color: #fff;
+}
+
+/* Heading */
+
+.title-tel a{
+    text-decoration: none;
+    font-weight: 400;
+    color: #F1B24A;
+}
+
+.title-tel a:hover{
+    color: #f8dbac;
+}
+
+.languages {
+    text-align: right;
+    padding-right: 10px; 
+}
+
+.languages a {
+    width: 100%; 
+    padding: 0 5px; 
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.languages a img:hover {
+    border-radius: 100%; 
+}
+
+.selected-language {
+    border-bottom-left-radius: 100%; 
+}
+
+.big-heading {
+    padding-top: 20px;
+    font-size: 2.5rem;  
+    line-height: 1.2;  
+    font-weight: 500;
+}
+
+.section-heading {
+    font-size: 3.5rem;  
+    line-height: 1.5; 
+    font-weight: 700;
+}
+
+.container-fluid {
+    padding: 2% 7%;
+}
+
+#info .container-fluid {
+    padding: 7% 15% 7%;
+}
+
+#info_str .container-fluid {
+    padding: 7% 15% 7%;
+}
+
+
+/* Navigation Bar */
+
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+    font-family: Ubuntu, sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0 12px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: 'Montserrat-light';
+}
+
+.rzetelna-firma a:hover {
+    display: inline-block;
+    background-color: #164A41;
+    transition-duration: 2s;
+}
+
+.rzetelna-firma img {
+    padding: 0%;
+}
+
+/* Check Button */
+
+.check-button {
+    margin: 5% 3% 0 0;
+}
+
+/* Title */
+
+
+#title {
+    background-color: #164A41;
+    text-align: left;
+}
+
+#title h1 h2 h3 h4 {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+#title .container-fluid {
+    padding: 3% 15% 7%;
+}
+
+.title-left {
+    text-align: left;
+}
+
+/* Title image */
+.title-img-right {
+    text-align: right; 
+    padding-right: 12px;
+}
+
+.title-img {
+    width: 100%;
+    }
+
+.title-img-rzf {
+    width: 50%;
+    border-radius: 5%;
+}
+
+
+/* About Company Section */
+
+#info, #info_str {
+    font: 1rem 'Montserrat', sans-serif;
+    background-color: #fff;
+    position: relative;
+    text-align: left;
+}
+
+#info h1 {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#info_str h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#info_str li {
+    font-family: 'Monserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: black;
+}
+
+.about-company {
+    font-family: 'Monserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: black;
+    padding-top: 10px;
+}
+
+/* Gallery section */
+
+#gallery {
+    background-color: #4D774E;
+    padding-top: 20px;
+}
+
+.gallery-text {
+    font-size: 2rem;
+    line-height: 1.5;
+    font-weight: 300;
+    margin: 0 5%;
+}
+
+.gallery-img {
+    width: 30%;
+    margin: 20px;
+}
+
+.bombardier {
+    width: 50%; 
+}
+
+/* Footer */
+
+#footer {
+    background-color: #164A41;
+}
+
+.p-footer {
+    padding: 20px 0 20px;
+    margin-bottom: 0;
+    color: #fff;
+    text-align: center;
+
+}
+
+
+/*Media*/
+
+@media (max-width: 1260px) {
+    .rzetelna-firma {
+        position: l;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .navbar {
+        padding: 0 0 2rem;
+    }
+
+    .big-heading, .section-heading {
+        font-size: 2rem;  
+    }
+
+    #title {
+        text-align: center;
+    }   
+
+    .check-button {
+        margin-bottom: 40px;
+    }
+
+    .title-img-right {
+        text-align: center;
+        padding-right: 0px; 
+    }
+
+    .title-img-rzf {
+        width: 50%;
+    }
+
+    .title-left {
+        text-align: center;
+    }
+
+    .title-tel {
+        text-align: left;
+        padding: 10px 10px;
+    }
+
+    .gallery-img {
+        width: 40%;
+    } 
+
+    .gallery-text {
+        font-size: 1.5rem;
+    }
+
+    .languages {
+        text-align: left;
+    }
+
+    .languages a {
+        padding-left: 0;
+    }
+} 
+
+
+@media all and (max-width: 800px) {
+    #title .container-fluid {
+        padding: 3% 5% 3%;
+    }
+    
+    .navbar {
+        padding: 0 0 2rem;
+    }
+    
+    #body-section .container-fluid {
+        padding: 1% 5%;
+        background-color: #164A41;
+        text-align: left;
+    }
+
+    .title-img {
+        text-align: center;
+        width: 60%;
+    }
+    
+    #footer {
+        padding: 2% 5% 2%;
+    }
+}
+
+@media (max-width: 650px) {
+    .gallery-img {
+        width: 70%;
+    }
+} 
+
+@media (max-width: 400px) {
+    .gallery-img {
+        width: 70%;
+    }
+
+    .title-img {
+        width: 100%;
+    }
+}
+
+#body-section .container-fluid{
+ min-height: 100%;
+ }

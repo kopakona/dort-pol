@@ -1,0 +1,38 @@
+{% extends "agency/base.html" %}
+
+{% load i18n %}
+{% load static %}
+
+{% block title %}
+    Dort-Pol: {% trans "Vacancy detail" %}
+{% endblock%}
+{% block style %}
+  <!-- Project CSS -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/list.css' %}">
+{% endblock %}
+
+{% block big_title %}
+{% endblock %}
+
+{% block content %}
+    <section id="body-section">
+        <div class="container-fluid">
+            <!-- Vacancy detail -->
+            <h3 class="h-parameters">{% trans "Vacancy" %}:</h3>
+            <div class="card text-dark bg-light mb-lg-5  mt-lg-5 p-3" style="max-width: 100%;">
+                <div class="card-header bg-transparent card-border mb-3 pb-3"><strong>{{ vacancy.title }}</strong></div>
+                <div class="card-body text-dark">
+                    <h5 class="card-title mb-4">{% trans "Job description" %}</h5>
+                    <h5 class="card-title mb-3">{% trans "Salary" %}: <b>{{ vacancy.salary }} zlt</b></h5>
+                    <p class="card-text card-text-body">{{ vacancy.description|safe }}</p>
+                    <!-- Button trigger modal -->
+                    <a href="{% url 'agency:feedback' %}" type="button" class="btn btn-sm btn-dark">
+                        {% trans "Apply now" %}
+                    </a>                   
+                </div>
+                <div class="card-footer bg-transparent card-border mt-3 pt-4">{% trans "Published" %}: {{vacancy.publish}}</div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
